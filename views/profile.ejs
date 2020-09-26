@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Civil Civet</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+
+        <h1><span class="fa fa-coffee"></span> Ordering Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+          <h1>Enter Order</h1>
+          <form method="POST" action="/order">
+            <input type="text" name="name" value="" placeholder="Name">
+            <input type="text" name="order" value="" placeholder="order">
+            <input class="submitBtn" type="submit" name="" value="Submit">
+          </form>
+      </div>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>

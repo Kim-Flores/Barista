@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="order.css">
+  </head>
+  <body class="messages">
+    <section class="logoImg">
+      <img class="logo" src="img/logo.png" alt="">
+    </section>
+    <div class="row">
+  <div class="column queue">
+    <!-- <div class="col-sm-6"> -->
+      <h3>Order Queue</h3>
+      <ul class="order">
+      <% for(var i=0; i<order.length; i++) {%>
+          <% if (!order[i].orderDone) { %>
+        <li class="order">
+          <span class="client"><%= order[i].name %></span>
+          <span class="drink"><%= order[i].order %></span>
+          <span class="time"><%= order[i].orderTime %></span>
+          <input id="barista" type="text" value="" placeholder="Completed By">
+          <button class="replied" type="button" name="button" value="<%=order[i]._id%>">Done</button>
+        </li>
+        <% } %>
+      <% } %>
+
+      </ul>
+      </div>
+      <div class="column complete" >
+
+      <h3>Completed Orders</h3>
+      <ul class="order">
+
+      <% for(var i=0; i<order.length; i++) {%>
+          <% if (order[i].orderDone) { %>
+        <li class="message2">
+          <span class="clientDone"><%= order[i].name %></span>
+          <span class="drinkDone"><%= order[i].order %></span>
+          <!-- date internal function passing in date now that converts milli seconds of call time to a date  -->
+          <span class="timeDone"><%= order[i].orderTime %></span>
+          <span class="baristaDone"><%= order[i].barista %></span>
+          <span data-id="<%=order[i]._id%>"><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+        <% } %>
+      <% } %>
+
+      </ul>
+
+
+      </div>
+
+    <script src="order.js"></script>
+  </body>
+
+</html>

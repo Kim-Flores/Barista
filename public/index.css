@@ -1,0 +1,57 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color:#b0a294;
+  background-image: url('');
+}
+/* or #b5afa8 */
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Courier Prime', monospace;
+}
+
+
+/* ===========INDEX======== */
+.civet{
+  width: 20%;
+  padding-top:30px;
+}
+
+.logo{
+  width: 40%;
+}
+
+h2{
+  font-family: 'Courier Prime', monospace;
+  font-size: 20px;
+}
+
+.jumbotron text-center{
+  background-color:#fffaf5;
+}
+
+.btnLogin{
+  background:#595552;
+  color: #FFF;
+  margin-right: 20px;
+}
+
+.btnSign{
+  background:#958E88;
+  color: #FFF;
+}
+
+.btn{
+  border: 2px solid #3B3937;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: thistle;
+  border:2px solid #997c99;
+}
+
+.logoImg{
+  display: block;
+}

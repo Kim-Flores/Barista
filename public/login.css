@@ -1,0 +1,39 @@
+/* ============LOGIN============ */
+
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color:#b0a294;
+  color:#3B3937;
+}
+/* or #b5afa8 */
+
+a{
+  color:rgb(236, 219, 236);
+}
+
+a:hover{
+  color: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-warning{
+  background:#795548;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-warning:hover{
+  background-color: thistle;
+  border: none;
+  color:#795548;
+  font-weight: bold;
+}
+
+.form-control{
+  border: 2px solid #997c99;
+}
+

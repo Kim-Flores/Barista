@@ -1,0 +1,52 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  color: #3B3937;
+  background:#b0a294 url(img/teacup.png) no-repeat left top;
+  background-size: contain;
+}
+/* or #b5afa8 */
+
+
+* {
+  box-sizing: border-box;
+}
+
+input{
+  border-radius: 3px;
+  height: 30px;
+  border: 2px solid #997c99;
+}
+
+.btn{
+  background-color:#958E88;
+  color: #ffffff;
+  border: 2px solid #3B3937;
+  font-weight: bold;
+  height: 32px;
+  font-size: 14px;
+}
+
+.btn:hover{
+  background-color: thistle;
+  color:#1E1C1B;
+  border: 2px solid #997c99;
+}
+
+.row{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.fa{
+  color: #FFF;
+}
+
+.submitBtn{
+  background-color: thistle;
+  font-weight: bold;
+}
+
+.page-header{
+  border-bottom: none;
+}
